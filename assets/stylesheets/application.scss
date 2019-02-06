@@ -2,9 +2,34 @@ body {
   font-family: Helvetica;
 }
 
-#root {
+#root > div {
   height: 100vh;
   display: flex;
-  align-items: center;
+}
+
+.left-scene {
+  flex: 0 0 60%;
+}
+
+.selected-gif {
+  height: 80%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.right-scene {
+  flex: 0 0 40%;
+}
+
+.gif-list {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    width: 240px;
+    height: 180px;
+    padding: 4px;
+  }
 }
